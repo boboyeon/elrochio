@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+#wrap {
+    background-color: #F0EAE2;
+    overflow: hidden;
+}
+
+
+
+/****** title ******/
+
+.title_img {
+    background: url(../img/history_title.jpg) no-repeat center;
+    width: 100%;
+    height: 100vh;
+}
+
+
+/****** page_nav ******/
+
+.page span {
+    font-size: 18px;
+    line-height: 60px;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    left: 5%;
+    z-index: 1;
+}
+
+.page li::after {
+    position: absolute;
+    content: "";
+    cursor: pointer;
+    height: 38px;
+    background-color: #9999;
+    left: 0;
+    bottom: 10px;
+    border-radius: 20px;
+    transform: rotateX(90deg);
+    transition: all 500ms;
+}
+
+.page li:nth-child(1)::after {
+    width: 65px;
+}
+
+.page li:nth-child(2)::after {
+    width: 83px;
+}
+
+.page li:nth-child(3)::after {
+    width: 60px;
+}
+
+.page li.sidecheck::after {
+    transform: rotateY(0deg);
+}
+
+
+
+/****** 본문 ******/
+
+.page1 {
+    width: 1024px;
+    height:1920px;
+    margin: 0 auto;
+    background-color: #E1A800;
+    position: relative;
+/*    overflow: hidden;*/
+}
+
+.page1 > img {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    vertical-align: top;
+}
